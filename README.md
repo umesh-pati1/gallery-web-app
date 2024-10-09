@@ -14,8 +14,8 @@ A web application for managing and displaying a gallery of images. This project 
 
 - [x] Make it deploy (w/ vercel)
 - [x] Scaffold basic ui with mock data
-- [ ] Setup a database (w/ vercel postgress)
-- [ ] Attach DB to UI
+- [x] Setup a database (w/ vercel postgress)
+- [x] Attach DB to UI
 - [ ] Add Authentication (w/ Clerk)
 - [ ] Add Image Upload
 - [ ] Error management (w/ sentry)
@@ -48,3 +48,11 @@ Reference: [Theo-t3.gg tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJs&t=3
    pnpm dev
    ```
 2. Open your browser and navigate to `http://localhost:3000`.
+
+## Questions
+
+1. What is drizzle ORM?
+
+2. What is FileRouter
+
+3. What is _satisfies_ keyword
