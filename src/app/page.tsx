@@ -1,10 +1,30 @@
+const mockUrls = [
+  "https://utfs.io/f/oOUk3MVaEcePNmhcoKutiIbaH2JcrqO3zDBYFjN1kvTusGnM",
+  "https://utfs.io/f/oOUk3MVaEcePZcLnBHtvC37Bjk8gDT4fPriR9IMlJwyuYzVH",
+  "https://utfs.io/f/oOUk3MVaEcePotGznTGVaEcePkQAlo5rNWC0Xx7ih4mF3qbT",
+  "https://utfs.io/f/oOUk3MVaEcePUfYpDo7F6B5pj37laedKObXwSZ4LRyuAHkvn",
+];
+
+const mockImages = mockUrls.map((url, index) => ({
+  id: index + 1,
+  url: url,
+}));
+
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Gallery Web App
-        </h1>
+    <main className="">
+      <div className="flex flex-wrap gap-4">
+        {[...mockImages, ...mockImages, ...mockImages, ...mockImages].map(
+          (image) => (
+            <div key={image.id} className="w-48">
+              <img
+                src={image.url}
+                className="aspect-square object-cover"
+                alt="image"
+              />
+            </div>
+          ),
+        )}
       </div>
     </main>
   );
