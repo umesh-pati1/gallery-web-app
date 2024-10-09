@@ -1,29 +1,50 @@
-# Create T3 App
+# Gallery Web App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A web application for managing and displaying a gallery of images. This project aims to provide a seamless user experience for uploading, viewing, and managing images. Inspired by a YouTube tutorial, it serves as a practical learning project.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- User authentication
+- Image upload and management
+- Error handling and analytics
+- Database integration
+- Rate limiting
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## TODO
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- [ ] Make it deploy (w/ vercel)
+- [ ] Scaffold basic ui with mock data
+- [ ] Setup a database (w/ vercel postgress)
+- [ ] Attach DB to UI
+- [ ] Add Authentication (w/ Clerk)
+- [ ] Add Image Upload
+- [ ] Error management (w/ sentry)
+- [ ] Parallel Routes
+- [ ] Delete button (w/ Server Actions)
+- [ ] Analytics (w/ posthog)
+- [ ] Rate limiter (w/ Upstash)
 
-## Learn More
+Reference: [Theo-t3.gg tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJs&t=3253s)
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Installation
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/gallery-web-app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd gallery-web-app
+   ```
+3. Install dependencies:
+   ```sh
+   pnpm install
+   ```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Usage
 
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. Start the development server:
+   ```sh
+   pnpm dev
+   ```
+2. Open your browser and navigate to `http://localhost:3000`.
