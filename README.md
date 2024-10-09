@@ -16,7 +16,7 @@ A web application for managing and displaying a gallery of images. This project 
 - [x] Scaffold basic ui with mock data
 - [x] Setup a database (w/ vercel postgress)
 - [x] Attach DB to UI
-- [ ] Add Authentication (w/ Clerk)
+- [x] Add Authentication (w/ Clerk)
 - [ ] Add Image Upload
 - [ ] Error management (w/ sentry)
 - [ ] Parallel Routes
