@@ -17,7 +17,8 @@ A web application for managing and displaying a gallery of images. This project 
 - [x] Setup a database (w/ vercel postgress)
 - [x] Attach DB to UI
 - [x] Add Authentication (w/ Clerk)
-- [ ] Add Image Upload
+- [x] Add Image Upload
+- [ ] taint (server-only)
 - [ ] Error management (w/ sentry)
 - [ ] Parallel Routes
 - [ ] Delete button (w/ Server Actions)
