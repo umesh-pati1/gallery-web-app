@@ -19,7 +19,7 @@ A web application for managing and displaying a gallery of images. This project 
 - [x] Add Authentication (w/ Clerk)
 - [x] Add Image Upload
 - [x] taint (server-only)
-- [ ] Error management (w/ sentry)
+- [x] Error management (w/ sentry)
 - [ ] Parallel Routes
 - [ ] Delete button (w/ Server Actions)
 - [ ] Analytics (w/ posthog)
