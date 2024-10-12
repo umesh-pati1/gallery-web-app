@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+dialog{
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.cl-userButtonAvatarBox{
+height: 3rem;
+width: 3rem;
+}

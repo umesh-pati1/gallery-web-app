@@ -20,7 +20,7 @@ A web application for managing and displaying a gallery of images. This project 
 - [x] Add Image Upload
 - [x] taint (server-only)
 - [x] Error management (w/ sentry)
-- [ ] Parallel Routes
+- [x] Parallel Routes
 - [ ] Delete button (w/ Server Actions)
 - [ ] Analytics (w/ posthog)
 - [ ] Rate limiter (w/ Upstash)
@@ -56,4 +56,12 @@ Reference: [Theo-t3.gg tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJs&t=3
 
 2. What is FileRouter
 
-3. What is _satisfies_ keyword
+3. What is `satisfies` keyword
+
+# Learn these
+
+### 1. Parallel Routing
+
+### 2. What is createPortal
+
+    createPortal lets you render some children into a different part of the DOM.

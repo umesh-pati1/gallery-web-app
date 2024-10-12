@@ -18,11 +18,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+  modal,
+}: Readonly<{ children: React.ReactNode; modal: React.ReactNode }>) {
   return (
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable}`}>
-        <body className="flex min-h-screen flex-col gap-4 bg-gradient-to-b from-[#2e026d] to-[#15162c] p-4 text-white">
+        <body className="flex min-h-screen flex-col gap-4 bg-gradient-to-b from-[#145DA0] to-[#B1D4E0] p-4 text-white">
           <NextSSRPlugin
             /**
              * The `extractRouterConfig` will extract **only** the route configs
@@ -35,6 +36,9 @@ export default function RootLayout({
           <TopNav />
 
           {children}
+          {modal}
+
+          <div id="modal-root"></div>
         </body>
       </html>
     </ClerkProvider>
