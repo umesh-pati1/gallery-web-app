@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useUploadThing } from "~/utils/uploadthing";
 import { toast } from "sonner";
 import LoadingSpinner from "./loading-spinner";
+import { usePostHog } from "posthog-js/react";
 
 // inferred input off useUploadThing
 type Input = Parameters<typeof useUploadThing>;
@@ -54,9 +55,11 @@ function UploadSvg() {
 
 export default function SimpleUploadButton() {
   const router = useRouter();
+  const posthog = usePostHog();
 
   const { inputProps } = useUploadThingInputProps("imageUploader", {
     onUploadBegin() {
+      posthog.capture("upload_begin");
       toast(
         <div className="flex items-center gap-2">
           <LoadingSpinner />
@@ -69,6 +72,7 @@ export default function SimpleUploadButton() {
       );
     },
     onClientUploadComplete() {
+      posthog.capture("upload_complete");
       toast.dismiss("upload-begin");
       toast("Upload Complete...", {
         duration: 10000,

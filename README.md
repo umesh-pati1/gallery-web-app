@@ -22,7 +22,7 @@ A web application for managing and displaying a gallery of images. This project 
 - [x] Error management (w/ sentry)
 - [x] Parallel Routes
 - [ ] Delete button (w/ Server Actions)
-- [ ] Analytics (w/ posthog)
+- [x] Analytics (w/ posthog)
 - [ ] Rate limiter (w/ Upstash)
 
 Reference: [Theo-t3.gg tutorial](https://www.youtube.com/watch?v=d5x0JCZbAJs&t=3253s)
