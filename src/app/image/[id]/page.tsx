@@ -9,5 +9,9 @@ export default function PhotoPage({
 
   if (isNaN(idAsNumber)) throw new Error("Invalid photo id");
 
-  return <FullPageImageView id={idAsNumber} />;
+  return (
+    <main className="flex items-center justify-center">
+      <FullPageImageView id={idAsNumber} />
+    </main>
+  );
 }
